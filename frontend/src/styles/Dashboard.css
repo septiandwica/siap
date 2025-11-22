@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Neural Background */
+.neural-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.neural-node {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #e3aef7;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: neuralPulse 4s ease-in-out infinite;
+}
+
+.neural-node:nth-child(1) {
+    top: 20%;
+    left: 15%;
+    animation-delay: 0s;
+}
+
+.neural-node:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-delay: 1s;
+}
+
+.neural-node:nth-child(3) {
+    top: 80%;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.neural-node:nth-child(4) {
+    top: 30%;
+    left: 70%;
+    animation-delay: 3s;
+}
+
+.neural-node:nth-child(5) {
+    top: 10%;
+    left: 60%;
+    animation-delay: 4s;
+}
+
